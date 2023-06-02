@@ -10,6 +10,8 @@ public class GameOfLife {
 
 	public void thisIsANewMethod() { 
 	Out.println("Das ist eine Beispielzeile für einen Konflikt in GIT");
+	invalidFile = false; // add a different line of code to the method that has been created previously (create a potential conflict) 
+
 	}
 	
 	static void printField(int pattern) {
