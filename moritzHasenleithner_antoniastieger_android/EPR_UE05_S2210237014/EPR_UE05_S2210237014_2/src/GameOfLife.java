@@ -8,6 +8,10 @@ public class GameOfLife {
 	static boolean[][] gameField = new boolean[GRIDSIZE][GRIDSIZE];
 	static boolean[][] nextGeneration = new boolean[GRIDSIZE][GRIDSIZE];
 
+	public void thisIsANewMethod() { 
+	
+	}
+	
 	static void printField(int pattern) {
 
 		if (invalidFile) {
