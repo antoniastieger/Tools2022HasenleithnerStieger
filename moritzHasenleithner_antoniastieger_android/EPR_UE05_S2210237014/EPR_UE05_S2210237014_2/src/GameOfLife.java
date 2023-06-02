@@ -9,7 +9,7 @@ public class GameOfLife {
 	static boolean[][] nextGeneration = new boolean[GRIDSIZE][GRIDSIZE];
 
 	public void thisIsANewMethod() { 
-	
+		invalidFile = false; // add a different line of code to the method that has been created previously (create a potential conflict) 
 	}
 	
 	static void printField(int pattern) {
