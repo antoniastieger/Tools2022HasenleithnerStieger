@@ -25,6 +25,8 @@ public class GameOfLife {
 			Out.println();
 		}
 	}
+	
+	static void thisIsMyNewTestCode() {}
 
 	static void setInitialState(int pattern) {
 
