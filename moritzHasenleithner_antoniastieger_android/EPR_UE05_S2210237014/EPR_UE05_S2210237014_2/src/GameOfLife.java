@@ -9,7 +9,7 @@ public class GameOfLife {
 	static boolean[][] nextGeneration = new boolean[GRIDSIZE][GRIDSIZE];
 
 	public void thisIsANewMethod() { 
-	
+	Out.println("Das ist eine Beispielzeile für einen Konflikt in GIT");
 	}
 	
 	static void printField(int pattern) {
