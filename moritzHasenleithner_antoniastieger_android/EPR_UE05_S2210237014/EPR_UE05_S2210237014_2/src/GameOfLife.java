@@ -269,7 +269,7 @@ public class GameOfLife {
 			Out.println("Error! Please enter valid Number for Boundary Condition: ");
 			Out.print("=> ");
 			boundCond = In.readInt();
-			Out.println();
+			Out.println("mo. i see u");
 		}
 		Out.println();
 
@@ -280,13 +280,13 @@ public class GameOfLife {
 			In.read();
 
 			// Next generation
-			performNextStep(boundCond);
+			performNextStep(boundCond++);
 
 			// generate new field
 			for (int i = 0; i < gameField.length; i++) {
 				gameField[i] = nextGeneration[i].clone();
 			}
-			printField(pattern);
+			printField(pattern--);
 		}
 	}
 }
