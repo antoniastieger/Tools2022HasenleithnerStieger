@@ -31,7 +31,7 @@ public class GameOfLife {
 				Out.println();
 			}
 			Out.println("----------------------------------------");
-			Out.println();
+			Out.println("HELLOOOOOOO");
 		}
 	}
 	
