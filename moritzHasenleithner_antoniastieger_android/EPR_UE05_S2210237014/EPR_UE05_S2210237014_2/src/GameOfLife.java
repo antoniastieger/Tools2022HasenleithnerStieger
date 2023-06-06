@@ -238,7 +238,7 @@ public class GameOfLife {
 		// print header
 		Out.println("Selection of Pattern:");
 		Out.println("1. Block pattern");
-		Out.println("2. Boat pattern");
+		Out.println("2. Boat - it's the weekend!! - pattern");
 		Out.println("3. Blinker pattern");
 		Out.println("4. Toad pattern");
 		Out.println("5. Glider pattern");
