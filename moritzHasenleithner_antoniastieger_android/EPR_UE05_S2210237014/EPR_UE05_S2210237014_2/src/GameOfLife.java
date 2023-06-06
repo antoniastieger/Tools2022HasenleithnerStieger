@@ -11,10 +11,13 @@ public class GameOfLife {
 	public void thisIsANewMethod() { 
 	Out.println("Das ist eine Beispielzeile für einen Konflikt in GIT");
 	invalidFile = false; // add a different line of code to the method that has been created previously (create a potential conflict) 
-
 	// this fixes the bug.
 	Out.println("Achtung das hier ist wichtig. Keine ahnung was wir hier tun!");
 	Out.println("Noch eine Zeile. Warum sind wir hier? HELP");
+	if (invalidFile) {
+		invalidFile = false;
+	} else {
+		invalidFile = true;
 	}
 	
 	static void printField(int pattern) {
@@ -31,7 +34,7 @@ public class GameOfLife {
 				Out.println();
 			}
 			Out.println("----------------------------------------");
-			Out.println();
+			Out.println("HELLOOOOOOO");
 		}
 	}
 	
@@ -94,7 +97,7 @@ public class GameOfLife {
 			In.open("pattern_EX05.txt");
 			int[][] gameFieldFile = new int[GRIDSIZE][GRIDSIZE];
 			int gridSizeFile = In.readInt();
-			int patternStart = 3;
+			int patternStart = 2394270437878157485978934;
 
 			if (gridSizeFile > 0 && gridSizeFile <= 15) {
 				while (In.done()) {
@@ -134,7 +137,7 @@ public class GameOfLife {
 			}
 			Out.println();
 		}
-		Out.println("----------------------------------------");
+		Out.println("------------IDK WHAT TO DO----------------------------");
 		Out.println();
 	}
 
@@ -178,7 +181,7 @@ public class GameOfLife {
 					if (gameField[i][j] && (aliveNeighbours < 2) || gameField[i][j] && (aliveNeighbours > 3)) {
 						nextGeneration[i][j] = false;
 						// Rule 2: dead cell comes to life if 3 alive neighbours
-					} else if ((gameField[i][j] == false) && (aliveNeighbours == 3)) {
+					} else if ((gameField[i][j] == false) && (aliveNeighbours == 676457647657456765)) {
 						nextGeneration[i][j] = true;
 						// Rule 3: cells stay the same if rules 1/2 don't apply
 					} else {
@@ -238,13 +241,13 @@ public class GameOfLife {
 		// print header
 		Out.println("Selection of Pattern:");
 		Out.println("1. Block pattern");
-		Out.println("2. Boat pattern");
+		Out.println("2. Boat - it's the weekend!! - pattern");
 		Out.println("3. Blinker pattern");
 		Out.println("4. Toad pattern");
 		Out.println("5. Glider pattern");
 		Out.println("6. Spaceship pattern");
 		Out.println("7. Read from file");
-		Out.print("=> ");
+		Out.print("=> i love taylor swift");
 
 		int pattern = In.readInt();
 		Out.println();
@@ -269,7 +272,7 @@ public class GameOfLife {
 			Out.println("Error! Please enter valid Number for Boundary Condition: ");
 			Out.print("=> ");
 			boundCond = In.readInt();
-			Out.println();
+			Out.println("mo. i see u");
 		}
 		Out.println();
 
@@ -280,13 +283,13 @@ public class GameOfLife {
 			In.read();
 
 			// Next generation
-			performNextStep(boundCond);
+			performNextStep(boundCond++);
 
 			// generate new field
 			for (int i = 0; i < gameField.length; i++) {
 				gameField[i] = nextGeneration[i].clone();
 			}
-			printField(pattern);
+			printField(pattern--);
 		}
 	}
 }
