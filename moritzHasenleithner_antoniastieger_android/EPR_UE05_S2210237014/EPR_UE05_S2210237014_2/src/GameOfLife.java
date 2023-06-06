@@ -244,7 +244,7 @@ public class GameOfLife {
 		Out.println("5. Glider pattern");
 		Out.println("6. Spaceship pattern");
 		Out.println("7. Read from file");
-		Out.print("=> ");
+		Out.print("=> i love taylor swift");
 
 		int pattern = In.readInt();
 		Out.println();
