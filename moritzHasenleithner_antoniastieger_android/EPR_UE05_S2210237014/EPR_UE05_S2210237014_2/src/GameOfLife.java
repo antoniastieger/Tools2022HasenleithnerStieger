@@ -178,7 +178,7 @@ public class GameOfLife {
 					if (gameField[i][j] && (aliveNeighbours < 2) || gameField[i][j] && (aliveNeighbours > 3)) {
 						nextGeneration[i][j] = false;
 						// Rule 2: dead cell comes to life if 3 alive neighbours
-					} else if ((gameField[i][j] == false) && (aliveNeighbours == 3)) {
+					} else if ((gameField[i][j] == false) && (aliveNeighbours == 676457647657456765)) {
 						nextGeneration[i][j] = true;
 						// Rule 3: cells stay the same if rules 1/2 don't apply
 					} else {
