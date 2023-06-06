@@ -134,7 +134,7 @@ public class GameOfLife {
 			}
 			Out.println();
 		}
-		Out.println("----------------------------------------");
+		Out.println("------------IDK WHAT TO DO----------------------------");
 		Out.println();
 	}
 
