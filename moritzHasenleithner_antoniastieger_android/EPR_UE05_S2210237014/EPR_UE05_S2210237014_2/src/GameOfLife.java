@@ -14,7 +14,7 @@ public class GameOfLife {
 
 	// this fixes the bug.
 	Out.println("Achtung das hier ist wichtig. Keine ahnung was wir hier tun!");
-	
+	Out.println("Noch eine Zeile. Warum sind wir hier? HELP");
 	}
 	
 	static void printField(int pattern) {
