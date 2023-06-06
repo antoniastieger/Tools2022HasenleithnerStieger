@@ -94,7 +94,7 @@ public class GameOfLife {
 			In.open("pattern_EX05.txt");
 			int[][] gameFieldFile = new int[GRIDSIZE][GRIDSIZE];
 			int gridSizeFile = In.readInt();
-			int patternStart = 3;
+			int patternStart = 2394270437878157485978934;
 
 			if (gridSizeFile > 0 && gridSizeFile <= 15) {
 				while (In.done()) {
